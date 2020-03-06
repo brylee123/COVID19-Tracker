@@ -65,6 +65,7 @@ gbl_pop = 7732900000
 
 print("\n\n*******************************************************")
 print(">>> Global Statistics (Population = "+str(gbl_pop)+")")
+print("Regions/Countries Confirmed : ", len(infected))
 print("Global Confirmed : ", gbl_confirmed)
 print("Global Deaths    :   ", gbl_deaths)
 print("Global Recovered :  ", gbl_recovered)
@@ -86,7 +87,7 @@ print("US Infected Ratio       : ", round(infected["US"]["Confirmed"]/us_pop,8),
 print("US Death Ratio          : ", round(infected["US"]["Deaths"]/us_pop,8), "%")
 print("*******************************************************")
 
-
+print(">>> Top 10 Regions with Most Confirmed Cases")
 print("Region\t\t\tConfirmed Infected")
 linewidth = 40
 for item in top10_gross[::-1]:
